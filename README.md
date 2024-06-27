@@ -47,7 +47,7 @@ If you have a solution to a problem that is not yet in this repository, feel fre
 5. Open a pull request.
 
 ## Contact
-If you have any questions or suggestions, feel free to reach out to me. You can contact me via [GitHub Issues](https://github.com/your-username/repository-name/issues).
+If you have any questions or suggestions, feel free to reach out to me. You can contact me via [GitHub Issues](https://github.com/tankarageldi/leetcode/issues).
 
 Happy coding!
 
