@@ -19,7 +19,7 @@ class Solution:
         set1 = set(nums1)
         set2 = set(nums2)
         return list(set2 & set1)
-    
+
 sol = Solution()
 nums1 = [4,9,5]
 nums2 = [9,4,9,8,4]
