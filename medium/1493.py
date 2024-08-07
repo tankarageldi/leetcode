@@ -7,7 +7,6 @@ class Solution:
         for i in range(len(nums)):
             if nums[i] == 0:
                 zero += 1
-            
             while zero > 1:
                 if nums[start] == 0:
                     zero -= 1
