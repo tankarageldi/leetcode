@@ -1,25 +1,23 @@
-import string
 class Solution:
     def minimumPushes(self, word: str) -> int:
-        alphabet = string.ascii_lowercase
-        presses = 1
-        dic={}
-        for char in alphabet:
-            if char =='s' or char == 'z':
-                dic[char] = 4
-                presses = 1
-            elif presses > 3:
-                presses = 1
-                dic[char] = presses
-                presses += 1
-            else:
-                dic[char] = presses
-                presses += 1
-        total = 0
-        for char in word:
-            
-            total += dic[char]
-        return total
+        # Frequency list to store count of each letter
+        frequency = [0] * 26
+
+        # Count occurrences of each letter
+        for c in word:
+            frequency[ord(c) - ord("a")] += 1
+        # Sort frequencies in descending order
+        frequency.sort(reverse=True)
+
+        total_pushes = 0
+
+        # Calculate total number of presses
+        for i in range(26):
+            if frequency[i] == 0:
+                break
+            total_pushes += (i // 8 + 1) * frequency[i]
+
+        return total_pushes
 
 sol = Solution()
 word = "abcde" # 5
