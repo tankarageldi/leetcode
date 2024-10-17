@@ -7,13 +7,14 @@ class Solution:
         
         i = 0
         j = len(skill) - 1
-
-        if skill[i] + skill[j] != pair_sum:
-                return - 1
+    
         while i < j:
-            ret += skill[i]*skill[j]
-            i+=1
-            j-=1
+            if skill[i] + skill[j] != pair_sum:
+                return - 1
+            else: 
+                ret += skill[i]*skill[j]
+                i+=1
+                j-=1
         return ret
 
 
