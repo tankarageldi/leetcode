@@ -1,3 +1,6 @@
+from collections import deque
+
+
 class Solution:
     def highestPeak(self, is_water):
         dx = [0, 0, 1, -1]  # Horizontal movement: right, left, down, up
