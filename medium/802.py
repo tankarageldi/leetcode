@@ -8,7 +8,7 @@ class Solution:
 
         def dfs(i):
             if i in safe:
-                return safe
+                return safe[i]
             safe[i] = False
             for nei in graph[i]:
                 if not dfs(nei):
